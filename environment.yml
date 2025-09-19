@@ -1,0 +1,36 @@
+name: epitope-env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  # Core ML frameworks
+  - python=3.10.0
+  - tensorflow=2.18.0
+  - keras=2.10.0
+  - pytorch=2.6.0
+  - transformers=4.40.0
+  - keras-tuner=1.4.7
+
+  # Scientific stack
+  - numpy=1.26.4
+  - pandas=2.3.1
+  - scikit-learn=1.6.1
+  - scipy=1.13.1
+  - statsmodels=0.14.5
+
+  # Visualization
+  - matplotlib=3.9.4
+  - seaborn=0.13.2
+
+  # Bioinformatics
+  - biopython=1.85
+
+  # Jupyter / notebooks
+  - jupyter=1.1.1
+  - notebook=7.4.5
+
+  # System tools (optional, if you want to specify)
+  - pip
+  - pip:
+      # Additional pip-only dependencies if not available on conda
+      - esm==x.x.x
