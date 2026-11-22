@@ -1,0 +1,35 @@
+﻿# Python 3.11 recommended; the supplied ESM-2 run used Python 3.11.13.
+# Compatibility specification, not a complete lockfile of the original Kaggle run.
+# See README_overall_notebooks.md for platform/GPU and notebook setup notes.
+
+# Feature-based deep learning (TensorFlow 2.18 requires Keras >=3.5)
+tensorflow==2.18.0
+keras==3.8.0
+
+# ESM-2 via Hugging Face (no separate esm/fair-esm package is used)
+# Log-confirmed torch release; CUDA wheel selection is platform-specific.
+torch==2.6.0
+# Compatibility choices: exact versions were not captured in the supplied logs.
+transformers==4.51.3
+accelerate==1.6.0
+# Imported by the supplied finalized notebook; optional if its tracking cells are skipped.
+wandb==0.20.1
+
+# Scientific stack and classical classifiers
+numpy==1.26.4
+pandas==2.3.1
+scikit-learn==1.6.1
+scipy==1.13.1
+statsmodels==0.14.5
+joblib==1.4.2
+xgboost==2.1.4
+
+# Visualization and bioinformatics
+matplotlib==3.9.4
+seaborn==0.13.2
+biopython==1.85
+
+# Notebook runtime
+jupyter==1.1.1
+notebook==7.4.5
+ipykernel==6.29.5

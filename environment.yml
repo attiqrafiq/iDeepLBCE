@@ -1,0 +1,11 @@
+﻿# Run from the repository root: conda env create -f environment.yml
+# Pip reads the same dependency list used for a standalone pip installation.
+# Keep requirements.txt beside this file; do not add duplicate Conda ML packages.
+name: epitope-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11.13
+  - pip
+  - pip:
+      - -r requirements.txt
